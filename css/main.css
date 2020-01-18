@@ -190,6 +190,7 @@ textarea {
 
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 
 /* .container {

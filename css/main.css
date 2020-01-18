@@ -19,6 +19,10 @@ html {
   scroll-behavior:smooth
 }
 
+strong {
+  font-weight: 700;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

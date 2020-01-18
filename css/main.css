@@ -242,12 +242,14 @@ body {
 
 .timer {
   width: 100vw;
+  padding-top: .7em;
+  padding-bottom: .7em;
   position: absolute;
   top: 0;
   background-color: rgba(0,0,0,.6);
 }
 .timer #clock-icon {
-  width: 1.7em;
+  width: 2em;
   margin-left: 1rem;
 }
 
@@ -276,7 +278,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: block;
-  padding: .5rem;
+  padding: .5em 4em;
   margin: 1rem;
   background: transparent;
   border: 1px solid #ffffff;

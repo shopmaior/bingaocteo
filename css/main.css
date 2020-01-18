@@ -359,6 +359,15 @@ body {
 
 }
 
+.copyright {
+  text-align: center;
+  padding-top: 1.2em;
+  padding-bottom: 1.4em;
+}
+.copyright a {
+  color: #004185;
+}
+
 /* ==========================================================================
    Media Queries for Responsive Design.
    THE primary ('mobile first') styles.

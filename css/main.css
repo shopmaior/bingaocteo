@@ -14,6 +14,7 @@
 html {
   color: #ffffff;
   font-size: 1em;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }
 
@@ -190,12 +191,29 @@ body {
   background-color: black;
 }
 
+/* .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
 .container {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
+
+.container .content {
+  max-width: 960px;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .hero {
   display: flex;
   width: 100vw;
@@ -221,7 +239,20 @@ body {
 
   z-index: 1;
 }
+
+.timer {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,.6);
+}
+.timer #clock-icon {
+  width: 1.7em;
+  margin-left: 1rem;
+}
+
 .logo-bingao {
+  user-select: none;
   z-index: 2;
 }
 .contact {
@@ -236,15 +267,34 @@ body {
   text-align: center;
 }
 .btn {
+  display: inline-block;
   color: white;
+  white-space: nowrap;
+  /* vertical-align: middle; */
+  user-select: none;
   font-size: 1.3rem;
   text-align: center;
   text-decoration: none;
   display: block;
-  padding: 1rem 4rem;
+  padding: .5rem;
   margin: 1rem;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius:0.2em;
+  box-sizing: border-box;
+  transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-red {
+  color: white;
+  border: 1px solid #B20204;
   background: #B20204;
-  border-radius: 5px;
 }
 .btn-whatsapp::before {
   content: '';
@@ -253,7 +303,7 @@ body {
   position: absolute;
   margin-left: -60px;
   margin-top: -4px;
-  background-image: url(images/fa-brands_whatsapp.png);
+  background-image: url(img/fa-brands_whatsapp.png);
 }
 .tel {
   color: white;
@@ -269,6 +319,13 @@ body {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  .btns-hero {
+    display: flex;
+    flex-flow: row;
+  }
+  .btn {
+    padding: .5em 1.7em;
+  }
 }
 
 @media print,

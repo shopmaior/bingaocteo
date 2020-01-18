@@ -8,7 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -41,16 +43,43 @@
   <!-- site content here -->
   <div class="container">
     <div class="hero">
+      <div class="timer">
+        <!-- Clock SVG -->
+        <svg id="clock-icon" width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="22.6667" cy="19.6667" r="19.6667" fill="#DF0000"/>
+          <circle cx="22.6667" cy="19.6667" r="1.66667" fill="white"/>
+          <circle cx="20.6667" cy="24.3333" r="20.1667" stroke="white"/>
+          <line x1="22.5" y1="19.3333" x2="22.5" y2="3.33333" stroke="white"/>
+          <line x1="23" y1="19.5" x2="34.3333" y2="19.5" stroke="white"/>
+        </svg>
+
+        FALTAM
+      </div>
       <img class="logo-bingao" src="img/logo.png" alt="Logotipo do 3º bingão do CT Eduardo oliveira, com um globo de bingo desenhado.">
       <div class="contact">
         <h1>QUER SER UM PARCEIRO?</h1>
-        <a class="btn btn-whatsapp" href="https://api.whatsapp.com/send?phone=5586981322198&text=Contato%20sobre%20paceria%20do%20bing%C3%A3o">WhatsApp</a>
-        <a class="tel" href="tel:+5586981322198">(86) 98132-2198</a>
+        <div class="btns-hero">
+          <a class="btn btn-red" href="https://api.whatsapp.com/send?phone=5586981322198&text=Contato%20sobre%20paceria%20do%20bing%C3%A3o">WhatsApp</a>
+          <a class="btn" href="#evento">O EVENTO</a>
+        </div>
       </div>
     </div>
   </div>
-  <main class="content">
-    <h1>...</h1>
+  <main class="container">
+    <div class="content" id="evento">
+        <h1>SOBRE O EVENTO</h1>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Diuretics paradis num copo é
+          motivis de denguis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Aenean aliquam
+          molestie leo, vitae iaculis nisl.
+        </p>
+        <p>Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. In elementis mé pra quem é
+          amistosis quis leo. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Sapien in monti
+          palavris qui num significa nadis i pareci latim.
+        </p>
+        <p>Quem num gosta di mim que vai caçá sua turmis! Delegadis gente finis, bibendum egestas augue arcu ut est. Admodum
+          accumsan disputationi eu sit. Vide electram sadipscing et per. Si u mundo tá muito paradis? Toma um mé que o mundo vai
+          girarzis!</p>
+    </div>
   </main>
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>

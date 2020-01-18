@@ -16,6 +16,7 @@ html {
   font-size: 1em;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   line-height: 1.4;
+  scroll-behavior:smooth
 }
 
 /*

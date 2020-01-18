@@ -383,6 +383,37 @@ body {
   .btn {
     padding: .5em 1.7em;
   }
+
+  .timer {
+    width: 100px;
+    left: 0;
+    height: 100vh;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .timer-left {
+    padding-left: 0;
+    margin-bottom: 1.3em;
+  }
+  .timer
+  .timer-left
+  #clock-icon {
+    width: 2.4em;
+  }
+
+  .timer-right {
+    text-align: center;
+    flex-flow: column;
+    padding-right: 0;
+  }
+
+  .timer-right
+  .timer-element {
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
 }
 
 @media print,
